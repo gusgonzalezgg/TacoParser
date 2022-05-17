@@ -24,11 +24,11 @@
 
             var latitude = double.Parse(cells[0]);// grab the latitude from your array at index 0
             var longitude = double.Parse(cells[1]);// grab the longitude from your array at index 1
-            var name = cells[2];// grab the name from your array at index 2
+            var name = cells[2].Trim();// grab the name from your array at index 2
 
-            var latitude = double.Parse(cells[0]);
-            var longitude = double.Parse(cells[1]);
-            var name = cells[2];
+            //var latitude = double.Parse(cells[0]);
+            //var longitude = double.Parse(cells[1]);
+            //var name = cells[2];
 
 
             // Your going to need to parse your string as a `double`
@@ -43,11 +43,11 @@
             // Then, return the instance of your TacoBell class
             // Since it conforms to ITrackable
 
-<<<<<<< HEAD
-            return new TacoBell(latitude,longitude,name);
-=======
+
+            
+
             return new TacoBell(latitude, longitude, name);
->>>>>>> 0ceefce659c0545264313abbb92e20484189cfb4
+
         }
     }
 }
