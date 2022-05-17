@@ -11,7 +11,8 @@ namespace LoggingKata
             Name = name;
             var point = new Point();
             point.Latitude = latitude;
-            point.
+            point.Longitude = longitude;
+            Location = point;
         }
 
         public string Name { get; set; }
